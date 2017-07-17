@@ -7,30 +7,53 @@ body{
 }
 
 header{
-    margin: 0 auto;
-    height: 150px;
+  display: block;
+  margin: 0 auto;
+  height: 4.8em;
+  vertical-align: middle;
 }
 
 .logo{
+  display: inline-block;
   margin: 0 auto;
   width: 10%;
+  position: absolute;
+  right: 25em;
+}
+
+.link_left, .link_right{
+  display: inline-block;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+.link_left{
+  float: left;
+}
+.link_right{
+  float: right;
 }
 
 .link{
-  width: 20%;
+  display: inline-block;
+  width: 49%;
   height: 100%;
   text-decoration: none;
   color: #ffffff;
-  margin-left: 7%;
-/*  border: 1px red solid;*/
+  vertical-align: middle;
+  line-height: 4.8em;
 }
 
 .link:hover{
   text-decoration: underline;
-  /*border-bottom: 1px #1ba2e6 solid;*/
   color: #1ba2e6;
 }
-.img:hover{
+.img :hover{
   text-decoration: none;
-  width: 12%;
+  transform: scale(1.05);
+}
+.first_article{
+  height: 22.5em;
+  border: 1px red solid;
+  background-image: url("img/sky.jpg");
 }
