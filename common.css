@@ -53,11 +53,6 @@ header{
   color: #1ba2e6;
   font-size: 1.05em;
 }
-.first_article{
-  height: 22.5em;
-  background-image: url("img/sky.jpg");
-  overflow: hidden;
-}
 .textbg{
   position: static;
   height: inherit;

@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Nik productin</title>
-		<link rel="stylesheet" href="style.css" class="css">
+		<link rel="stylesheet" href="common.css" class="css">
+		<link rel="stylesheet" href="slider.css" class="css">
 	</head>
 	<body>
 		<header>
@@ -19,15 +20,34 @@
 				<a class="link" href="#">Заказать</a>
 			</div>
 		</header>
-		<div>
-			<div class="first_article">
-				<a href="#" class="arrow lft"></a>
-				<a href="#" class="arrow rght" ></a>
+		<div class="slider">
+			<input id="slide-1" type="radio" name="slides" checked>
+				<div class="slide slide-one">
+						<a href="#" class="arrow lft"></a>
+						<a href="#" class="arrow rght" ></a>
 						<div class="textbg">
-						<h1 class="artCaption">Звездное небо</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<h1 class="artCaption">Звездное небо</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
 				</div>
-			</div>
+			<input id="slide-2" type="radio" name="slides" >
+				<div class="slide slide-two">
+
+				</div>
+			<input id="slide-3" type="radio" name="slides" >
+				<div class="slide slide-three">
+
+				</div>
+			<input id="slide-4" type="radio" name="slides" >
+				<div class="slide slide-four">
+
+				</div>
+
+			<label for="slide-1"></label>
+			<label for="slide-2"></label>
+			<label for="slide-3"></label>
+			<label for="slide-4"></label>
+
 		</div>
 	</body>
 </html>

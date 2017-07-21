@@ -1,0 +1,7 @@
+.slide{
+  height: 22.5em;
+  overflow: hidden;
+}
+.slide-one{
+  background-image: url("img/sky.jpg");
+}
