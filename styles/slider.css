@@ -1,0 +1,110 @@
+input{
+  display: none;
+}
+input[type=radio]:not(checked) + div.slide{
+  display: none;
+}
+input[type=radio]:not(checked) + label{
+  display: none;
+}
+.slider{
+  width: 100%;
+  height: 22.5%
+  overflow: hidden;
+}
+.slider label{
+  width: .5%;
+  height: .5%;
+  cursor: pointer;
+}
+
+.slide{
+  height: 22.5em;
+  overflow: hidden;
+}
+.slide-one{
+  background-image: url("../img/sky.jpg");
+}
+
+
+/*style of slide*/
+.textbg{
+  position: static;
+  height: inherit;
+  font-family: Arial, serif;
+  font-weight: bold;
+  width: 30%;
+  float: right;
+  margin-right: 11.5%;
+  background-color: rgba(96, 96, 96, 0.5);
+  transform: skewX(-30deg);
+  overflow: hidden;
+}
+.textbg h1, .textbg p{
+    font-family: Arial, serif;
+    font-style: italic;
+    transform: skewX(30deg); /*выровнял текст*/
+}
+.artCaption{
+  margin: 30% 5%;
+  font-size: 2em;
+  color: #1ba2e6;
+  text-shadow:                /*обводка текста*/
+		-0   -2px 0   #000000,
+		 0   -2px 0   #000000,
+		-0    2px 0   #000000,
+		 0    2px 0   #000000,
+		-2px -0   0   #000000,
+		 2px -0   0   #000000,
+		-2px  0   0   #000000,
+		 2px  0   0   #000000,
+		-1px -2px 0   #000000,
+		 1px -2px 0   #000000,
+		-1px  2px 0   #000000,
+		 1px  2px 0   #000000,
+		-2px -1px 0   #000000,
+		 2px -1px 0   #000000,
+		-2px  1px 0   #000000,
+		 2px  1px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000,
+		-2px -2px 0   #000000,
+		 2px -2px 0   #000000,
+		-2px  2px 0   #000000,
+		 2px  2px 0   #000000;
+}
+.textbg p{
+  margin: 0 5%;
+  font-size: 0.95em;
+  font-weight: normal;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000;
+}
+.arrow{
+  width: 5%;
+  height: 100%;
+  background-image: url("../img/arrow_right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 5%;
+}
+.arrow:hover{
+  background-color: rgba(96, 96, 96, 0.5);
+}
+.rght{
+  background-image: url("../img/arrow_right.png");
+  float: right;
+}
+.rght:hover{
+  background-image: url("../img/arrow_right_hover.png");
+}
+.lft{
+  background-image: url("../img/arrow_left.png");
+  float: left;
+}
+.lft:hover{
+  background-image: url("../img/arrow_left_hover.png");
+}
