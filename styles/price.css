@@ -1,0 +1,105 @@
+.price {
+	height: 22.5em;
+	position: relative;
+}
+.paralelg {
+	display: inline-block;
+	overflow: hidden;
+	margin: 7% auto;
+	width: 20%;
+	border: 0.04em #ffffff solid;
+	transform: skew(-30deg);
+	height: 70%;
+	border-radius: 3%;
+	vertical-align: middle;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all .3s ease-in-out;
+}
+.paralelg:hover  {
+	position: static;
+	height: 75%;
+	border: 0.16em #1ba2e6 solid;
+	margin: 4% auto;
+}
+
+.price2 {
+	position: absolute;
+}
+.price1 {
+	float: left;
+	margin-left: 7%;
+	margin-right: 7%;
+}
+.price1 img, .price2 img, .price3 img{
+	position: absolute;
+	height: 100%;
+	transform: skew(30deg);
+	margin-left: -50%;
+}
+
+.price1:hover, .price3:hover {
+	position: static;
+	margin-left: 7%;
+	margin-right: 6.57%;
+}
+.price3{
+	float: right;
+	margin-right: 7%;
+}
+
+div.color{
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	background: rgba(25, 30, 37, 0.75);
+	transition: .15s ease-in-out;
+}
+.paralelg:hover  div.color{
+	visibility: visible;
+}
+
+/*text*/
+
+.paralelg p{
+	position: relative;
+	margin: 100% -10%;
+	width: 150%;
+	height: 30%;
+	background-color: rgba(25, 30, 37, 0.75);
+	color: #fff;
+	font-size: 1.4em;
+	text-align: center;
+	line-height: 100%;
+	vertical-align: middle;
+	transform: skew(30deg);
+}
+
+/*ARROWS*/
+
+.arrow_2{
+  width: 5%;
+  height: 100%;
+  background-image: url("../img/arrow_right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 5%;
+}
+/*.arrow:hover{
+  background-color: rgba(96, 96, 96, 0.5);
+}*/
+.rght{
+  background-image: url("../img/arrow_right.png");
+  float: right;
+}
+.rght:hover{
+  background-image: url("../img/arrow_right_hover.png");
+}
+.lft{
+  background-image: url("../img/arrow_left.png");
+  float: left;
+}
+.lft:hover{
+  background-image: url("../img/arrow_left_hover.png");
+}

@@ -54,9 +54,28 @@ header{
   font-size: 1.05em;
 }
 .about{
+  color: #ffffff;
   height: 22.5em;
   background-image: url("img/Cube_left.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
+}
+.text{
+  width: 45%;
+  float: right;
+  margin-top: 3%;
+  margin-right: 5%;
+}
+.text h1, .text p {
+  float: right;
+  text-align: right;
+}
+.text h1 {
+  font-size: 2.2em;
+}
+.text p {
+  font-size: .85em;
+  line-height: 1.5em;
+  vertical-align:  middle;
 }
