@@ -53,3 +53,10 @@ header{
   color: #1ba2e6;
   font-size: 1.05em;
 }
+.about{
+  height: 22.5em;
+  background-image: url("img/Cube_left.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+}
