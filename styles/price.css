@@ -5,56 +5,65 @@
 .paralelg {
 	display: inline-block;
 	overflow: hidden;
-	margin: 7% auto;
 	width: 20%;
 	border: 0.04em #ffffff solid;
 	transform: skew(-30deg);
-	height: 70%;
+	height: 60%;
 	border-radius: 3%;
-	vertical-align: middle;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: all .3s ease-in-out;
 }
 .paralelg:hover  {
-	position: static;
+	position: absolute;
 	height: 75%;
+	width: 22%;
 	border: 0.16em #1ba2e6 solid;
-	margin: 4% auto;
 }
-
-.price2 {
+/*----------------------------------------------*/
+.price1 , .price2, .price3{ 
 	position: absolute;
 }
 .price1 {
-	float: left;
-	margin-left: 7%;
-	margin-right: 7%;
+	left: 14%;
+	top: 19%;	
 }
+.price2 {
+	left: 41%;
+	top: 19%;
+}
+.price3{
+	right: 12%;
+	top: 19%;
+}
+/*--------------------------------------------*/
 .price1 img, .price2 img, .price3 img{
 	position: absolute;
 	height: 100%;
 	transform: skew(30deg);
-	margin-left: -50%;
+	margin-left: -40%;
 }
-
-.price1:hover, .price3:hover {
-	position: static;
-	margin-left: 7%;
-	margin-right: 6.57%;
+/*------------------------------------------------*/
+.price1:hover {
+	left: 12%;
+	top: 10%;
 }
-.price3{
-	float: right;
-	margin-right: 7%;
+.price2:hover {
+	left: 38.5%;
+	top: 10%;
 }
-
+.price3:hover{
+	right: ;
+	top: 10%;
+}
+/*-------------------------------------------*/
 div.color{
 	position: absolute;
 	visibility: hidden;
 	width: 100%;
 	height: 100%;
 	background: rgba(25, 30, 37, 0.75);
-	transition: .15s ease-in-out;
+	transition: all .15s ease-in-out;
 }
 .paralelg:hover  div.color{
 	visibility: visible;
@@ -62,44 +71,60 @@ div.color{
 
 /*text*/
 
-.paralelg p{
-	position: relative;
-	margin: 100% -10%;
+.textBYprice {
+	position: absolute;
+	bottom: -10.5%;
+	left: -25%;
 	width: 150%;
 	height: 30%;
 	background-color: rgba(25, 30, 37, 0.75);
 	color: #fff;
 	font-size: 1.4em;
 	text-align: center;
-	line-height: 100%;
-	vertical-align: middle;
+	line-height: 3em;
 	transform: skew(30deg);
+	transition: all .5s ease-in-out;
+}
+.paralelg:hover .textBYprice{
+	transform: rotate(-90deg);
+	background: none;
+	font-size: 2em;
+	text-align: center;
+	width: 100%;
+	height: 1%;
 }
 
 /*ARROWS*/
 
 .arrow_2{
-  width: 5%;
-  height: 100%;
-  background-image: url("../img/arrow_right.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 5%;
+	width: 5%;
+	height: 100%;
+	position: relative;
+	z-index: 100;
+	background-image: url("../img/arrow_right.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 5%;
 }
-/*.arrow:hover{
-  background-color: rgba(96, 96, 96, 0.5);
-}*/
+
 .rght{
-  background-image: url("../img/arrow_right.png");
-  float: right;
+	background-image: url("../img/arrow_right.png");
+	float: right;
+	transition: .3s ease-in-out;
 }
 .rght:hover{
-  background-image: url("../img/arrow_right_hover.png");
+	background-image: url("../img/arrow_right_hover.png");
+	background-color:rgba(96, 96, 96, 0.6);
+	border-radius: 70% 0 0 70%;
 }
+
 .lft{
-  background-image: url("../img/arrow_left.png");
-  float: left;
+	background-image: url("../img/arrow_left.png");
+	float: left;
+	transition: .5s ease-in-out;
 }
 .lft:hover{
-  background-image: url("../img/arrow_left_hover.png");
+	background-image: url("../img/arrow_left_hover.png");
+	background-color:rgba(96, 96, 96, 0.6);
+	border-radius: 0 100% 100% 0;
 }
