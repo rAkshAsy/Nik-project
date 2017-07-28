@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Nik productin</title>
 	<link rel="stylesheet" href="common.css" class="text/css">
-	<link rel="stylesheet" href="styles/slider.css" class="text/css">
-	<link rel="stylesheet" href="styles/price.css" class="text/css"></link>
+	<link rel="stylesheet" type="text/css" href="styles/com_slider.css">
+	<link rel="stylesheet" href="styles/price.css" class="text/css">
 </head>
 <body>
 	<script> 
@@ -54,14 +54,14 @@
 		</div>
 	</div>
 	<div class="about">
-		<div class="text">
+		<div class="textAbout">
 			<h1>Обо мне</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 		</div>
 	</div>
 	<div class="price">
-		<a href="#" class="arrow_2 lft"></a>
-		<a href="#" class="arrow_2 rght" ></a>
+		<a href="#" class="arrow_2 lft_2"></a>
+		<a href="#" class="arrow_2 rght_2" ></a>
 		<div class="paralelg price1">
 			<img src="img/pict/graduation.jpg">
 			<div class="color"></div>
@@ -76,6 +76,28 @@
 			<img src="img/pict/advertising.jpg">
 			<div class="color"></div>
 			<p class="textBYprice">Реклама</p>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="questionnaire">
+			<form class="q_user">
+				<p class="form_title">Связаться со мной</p>
+				<p>
+				<label for="userName"> Имя</label><br>
+				<input id='userName' type="text" name="user_name">
+				</p>
+				<p>
+				<label for="userMail">E-mail</label><br>
+				<input id="userMail" type="email" name="user_email">
+				</p>
+				<p>
+				<label for="userComment">Комментарий</label><br>
+				<textarea id="userComment"></textarea>
+				</p>
+				<p>
+				<input type="submit" name="submit">
+				</p>
+			</form>
 		</div>
 	</div>
 </body>

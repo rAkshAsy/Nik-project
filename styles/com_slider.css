@@ -1,4 +1,4 @@
-input{
+.slider input{
   display: none;
 }
 input[type=radio]:not(checked) + div.slide{

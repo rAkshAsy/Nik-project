@@ -56,13 +56,15 @@ header{
 .about{
   color: #ffffff;
   height: 22.5em;
+  margin: 1% 0;
   background-image: url("img/Cube_left.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
 }
-.text{
+.textAbout {
   width: 45%;
+  text-align: right;
   float: right;
   margin-top: 3%;
   margin-right: 5%;
@@ -78,4 +80,42 @@ header{
   font-size: .85em;
   line-height: 1.5em;
   vertical-align:  middle;
+}
+.input{
+  display: auto;
+}
+.questionnaire{
+  height: 22.5em;
+  background: url("img/Cube_right.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.form_title{
+  text-align: center;
+}
+.q_user{
+  border: 1px red solid;
+  width: 35%;
+  padding: 5%;
+  height: 80%;
+  color: #fff;
+}
+.q_user input, .q_user textarea{
+ background-color: inherit; 
+ border-radius: 15%;
+ border-color: #fff;
+ color: #fff;
+ margin-left: 10%;
+}
+.q_user label{
+  margin-left: 10%;
+  font-size: 0.65em;
+}
+#userName, #userMail, #userComment{
+  width: 70%;
+
+}
+.q_user input:focus {
+  border-color: #1ba2e6;
+  background-color: inherit;
 }
