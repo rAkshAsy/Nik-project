@@ -94,18 +94,18 @@ header{
   text-align: center;
 }
 .q_user{
-  border: 1px red solid;
-  width: 35%;
+  width: 40%;
   padding: 5%;
+  padding-top: 2%; 
   height: 80%;
   color: #fff;
 }
 .q_user input, .q_user textarea{
  background-color: inherit; 
- border-radius: 15%;
- border-color: #fff;
+ border: 1px #fff solid;
  color: #fff;
- margin-left: 10%;
+ margin-left: 10%; 
+ border-radius: 0.5em;
 }
 .q_user label{
   margin-left: 10%;
@@ -113,9 +113,38 @@ header{
 }
 #userName, #userMail, #userComment{
   width: 70%;
-
+  padding: 1.5%;
+  font-size: 0.9em;
 }
-.q_user input:focus {
-  border-color: #1ba2e6;
+.for_textarea_height{
+    height: 6em;
+}
+#userComment {
+  padding: 1.5% 1%;
+  resize: none;
+}
+.q_user input:focus , #userComment:focus {
+  border: 1px #1ba2e6 solid;
   background-color: inherit;
+  outline: none;
+}
+.q_user input[type="submit"]{
+  border: none;
+}
+.button_in_form{
+  position: absolute;
+  height: 5%;
+  text-align: center;
+  width: 10%;
+  left: -4%;
+  border: none;
+  background-image: url("img/button_in_form_not_active.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
+  cursor: pointer;
+}
+.button_in_form:focus{
+  background-image: url("img/button_in_form_active.png");
+  font-weight: bold;
 }
