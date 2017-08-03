@@ -6,7 +6,10 @@ body{
   font-family: Roboto, sans-serif;
   margin: 0;
 }
-
+a{
+  text-decoration: none;
+  color: #fff;
+}
 header{
   display: block;
   margin: 1% auto;
@@ -16,20 +19,14 @@ header{
 
 .logo{
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 5%;
   width: 10%;
-  position: absolute;
-  right: 25em;
-}
-.img :hover{
-  text-decoration: none;
-  transform: scale(1.05);
 }
 .link_left, .link_right{
-  display: inline-block;
   width: 40%;
   height: 100%;
   text-align: center;
+  line-height: 4.8em;
 }
 .link_left{
   float: left;
@@ -37,17 +34,13 @@ header{
 .link_right{
   float: right;
 }
-
 .link{
   display: inline-block;
   width: 49%;
   height: 100%;
   text-decoration: none;
   color: #ffffff;
-  vertical-align: middle;
-  line-height: 4.8em;
 }
-
 .link:hover{
   text-decoration: underline;
   color: #1ba2e6;
@@ -84,11 +77,12 @@ header{
 .input{
   display: auto;
 }
-.questionnaire{
+.contact{
   height: 22.5em;
   background: url("img/Cube_right.png") no-repeat;
   background-size: contain;
   background-position: right;
+  margin-bottom: 4%;
 }
 .form_title{
   text-align: center;
@@ -117,7 +111,7 @@ header{
   font-size: 0.9em;
 }
 .for_textarea_height{
-    height: 6em;
+  height: 6em;
 }
 #userComment {
   padding: 1.5% 1%;
@@ -147,4 +141,82 @@ header{
 .button_in_form:focus{
   background-image: url("img/button_in_form_active.png");
   font-weight: bold;
+}
+.footer{
+  height: 22.5em;
+  width: 100%;
+  position: relative;
+}
+.line {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background-color: #1ba2e6;
+  left: 10%;
+}
+.bottom_line {
+  bottom: 1%;
+}
+.uper_line {
+  top: 1%;
+}
+.bottom_img{
+  cursor: pointer;
+}
+.link:hover > .img_social{
+  text-decoration: none;
+  transform: scale(1.2);
+}
+.footer .logo{
+  margin-top: 2%;
+}
+.logo:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+}
+.img_social {
+  width: 60%;
+}
+.footer .link{
+  width: 15%;
+  margin-top: 8%;
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footer .link:hover{
+  text-decoration: none;
+}
+.colum{
+  display: inline-block;
+  width: 33%;
+  color: #fff;
+  text-align: center;
+}
+.colum h1{
+  font-size: 1.3em;
+}
+.footer menu{
+    list-style: none;
+    padding: 0;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.colum li{
+  display: inline;
+}
+.first_col li{
+  line-height: 362.5%;
+}
+.second_col li{
+  line-height: 200%;
+}
+.third_col li{
+  line-height: 200%;
+}
+.copyright{
+  color: #fff;
+  text-align: center;
+  font-size: 0.6em;
 }

@@ -3,11 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nik productin</title>
-	<link rel="stylesheet" type="text/css" href="common.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="styles/com_slider.css">
 	<link rel="stylesheet" href="styles/price.css" class="text/css">
 </head>
 <body>
+	<div class="vertical_line"></div><!-- Отцентровка -->
 	<script> 
 		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 	</script>
@@ -79,26 +80,81 @@
 		</div>
 	</div>
 	<div class="contact">
-		<div class="questionnaire">
-			<form class="q_user">
-				<p class="form_title">Связаться со мной</p>
-				<p>
+		<form class="q_user">
+			<p class="form_title">Связаться со мной</p>
+			<p>
 				<label for="userName"> Имя</label><br>
 				<input id='userName' type="text" name="user_name">
-				</p>
-				<p>
+			</p>
+			<p>
 				<label for="userMail">E-mail</label><br>
 				<input id="userMail" type="email" name="user_email">
-				</p>
-				<p>
+			</p>
+			<p>
 				<label for="userComment">Комментарий</label><br>
 				<textarea class="for_textarea_height" id="userComment"></textarea>
-				</p>
-				<p>
+			</p>
+			<p>
 				<input class="button_in_form" type="submit" name="submit">
-				</p>
-			</form>
-		</div>
+			</p>
+		</form>
 	</div>
+	<footer class="footer">
+		<div class="line uper_line"></div>
+		<div class="head_of_footer">
+			<div class="link_left">
+				<a class="link" href="#">
+					<img class="img_social" src="img/social/vk.png">
+				</a>
+				<a class="link" href="#">
+					<img class="img_social" src="img/social/facebook.png">
+				</a>
+			</div>
+			<a class="bottom_img" href="#">
+				<img class="logo" src="img/logo_white.png">
+			</a>
+			<div class="link_right">
+				<a class="link" href="#">
+					<img class="img_social" src="img/social/inst.png">
+				</a>
+				<a class="link" href="#">
+					<img class="img_social" src="img/social/youtube.png">
+				</a>
+			</div>
+		</div>
+		<div class="first_col colum">
+			<h1>Узнать больше</h1>
+			<menu>
+				<li><a href="#">Портфолио</a></li><br>
+				<li><a href="#">Прейскурант</a></li><br>
+				<li><a href="#">Обо мне</a></li><br>
+			</menu>
+		</div>
+		<div class="second_col colum">
+			<h1>Топ фотоподборок</h1>
+			<menu>
+				<li><a href="#">1. Название</a></li><br>
+				<li><a href="#">2. Название</a></li><br>
+				<li><a href="#">3. Название</a></li><br>
+				<li><a href="#">4. Название</a></li><br>
+				<li><a href="#">5. Название</a></li><br>
+			</menu>
+		</div>
+		<div class="third_col colum">
+			<h1>Контакты</h1>
+			<menu>
+				<li>tel *********</li><br>
+				<li>tel *********</li><br>
+				<li>email: ****@*******</li><br>
+				<li>skype: **********</li><br>
+				<li><a href="#">Сделать заказ</a></li><br>
+			</menu>
+		</div>
+		<div class="line bottom_line"></div>
+		<div class="copyright">
+			<p>Copyright &copy; 2016 Nik Production<br>
+made by <a href="#">rAkshAs</a></p>
+		</div>
+	</footer>
 </body>
 </html>
