@@ -3,64 +3,74 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nik productin</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="styles/com_slider.css">
+	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="styles/price.css" class="text/css">
 </head>
 <body>
-	<div class="vertical_line"></div><!-- Отцентровка -->
 	<script> 
 		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 	</script>
 	<header>
 		<div class="link_left">
-			<a class="link" href="#">Портфолио</a>
-			<a class="link" href="#">Обо мне</a>
+			<a class="link" href="#slider">Портфолио</a>
+			<a class="link" href="#about">Обо мне</a>
 		</div>
-		<a class="img" href="#">
+		<a class="img" href="index.html">
 			<img class="logo" src="img/logo_white.png">
 		</a>
 		<div class="link_right">
-			<a class="link" href="#">Прейскурант</a>
-			<a class="link" href="#">Заказать</a>
+			<a class="link" href="#price">Прейскурант</a>
+			<a class="link" href="#contact">Заказать</a>
 		</div>
 	</header>
-<!-- 	<div class="slider">
-		<input id="slide-1" type="radio" name="slides" checked>
-				<input id="slide-2" type="radio" name="slides" >
-		<div class="slide slide-two">
-
+	<div class="slider-container">
+		<a href="" class='anchor' name="slider"></a>
+		<div class="slide fade">
+			<img src="img/pict/advertising.jpg" style="width:100%">
+			<div class="textbg">
+				<h1 class="artCaption">Колосочек</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-		<input id="slide-3" type="radio" name="slides" >
-		<div class="slide slide-three">
-
+		<div class="slide fade">
+			<img src="img/pict/photosession.jpg" style="width:100%">
+			<div class="textbg">
+				<h1 class="artCaption">Photosecion</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-		<input id="slide-4" type="radio" name="slides" >
-		<div class="slide slide-four">
-
+		<div class="slide fade">
+			<img src="img/sky.jpg" style="width:100%">
+			<div class="textbg">
+				<h1 class="artCaption">Звездное небо</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-		<div>
-			<label for="slide-1"><img src="img/button_not_active.png" alt=""></label>
-			<label for="slide-2"><img src="img/button_not_active.png" alt=""></label>
-			<label for="slide-3"><img src="img/button_not_active.png" alt=""></label>
-			<label for="slide-4"><img src="img/button_not_active.png" alt=""></label>
+		<div class="slide fade">
+			<img src="img/pict/graduation.jpg" style="width:100%">
+			<div class="textbg">
+				<h1 class="artCaption">Выпуск</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
 		</div>
-	</div> -->
-	<div class="slide slide-one">
-		<a href="#" class="arrow lft"></a>
-		<a href="#" class="arrow rght" ></a>
-		<div class="textbg">
-			<h1 class="artCaption">Звездное небо</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<a class="arrow lft slideButton" onclick="nextSlide(-1)"></a>
+		<a class="arrow rght slideButton" onclick="nextSlide(1)"></a>
+		<div class="dots">
+			<span class="dot slideButton" onclick="currentSlide(1)"></span>
+			<span class="dot slideButton" onclick="currentSlide(2)"></span>
+			<span class="dot slideButton" onclick="currentSlide(3)"></span>
+			<span class="dot slideButton" onclick="currentSlide(4)"></span>
 		</div>
 	</div>
 	<div class="about">
+		<a href="" class="anchor" name="about"></a>
 		<div class="textAbout">
-			<h1>Обо мне</h1>
+			<a href="pages/about.html"><h1>Обо мне</h1></a>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 		</div>
 	</div>
 	<div class="price">
+		<a href="" class="anchor" name="price"></a>
 		<a href="#" class="arrow_2 lft_2"></a>
 		<a href="#" class="arrow_2 rght_2" ></a>
 		<div class="paralelg price1">
@@ -80,6 +90,7 @@
 		</div>
 	</div>
 	<div class="contact">
+		<a href="" class="anchor" name="contact"></a>
 		<form class="q_user">
 			<p class="form_title">Связаться со мной</p>
 			<p>
@@ -125,9 +136,9 @@
 		<div class="first_col colum">
 			<h1>Узнать больше</h1>
 			<menu>
-				<li><a href="#">Портфолио</a></li><br>
-				<li><a href="#">Прейскурант</a></li><br>
-				<li><a href="#">Обо мне</a></li><br>
+				<li><a href="pages/main_inside_page.html">Портфолио</a></li><br>
+				<li><a href="pages/price.html">Прейскурант</a></li><br>
+				<li><a href="pages/about.html">Обо мне</a></li><br>
 			</menu>
 		</div>
 		<div class="second_col colum">
@@ -153,8 +164,9 @@
 		<div class="line bottom_line"></div>
 		<div class="copyright">
 			<p>Copyright &copy; 2016 Nik Production<br>
-made by <a href="#">rAkshAs</a></p>
-		</div>
-	</footer>
-</body>
-</html>
+				made by <a href="#">rAkshAs</a></p>
+			</div>
+		</footer>
+		<script src="scripts/slider.js"></script>
+	</body>
+	</html>

@@ -12,7 +12,10 @@ a{
 }
 header{
   display: block;
+  background-color: #02090d;
+  width: 100%;
   margin: 1% auto;
+  z-index: 100;
   height: 4.8em;
   vertical-align: middle;
 }
@@ -40,6 +43,7 @@ header{
   height: 100%;
   text-decoration: none;
   color: #ffffff;
+  transition: 1s;
 }
 .link:hover{
   text-decoration: underline;
@@ -47,10 +51,11 @@ header{
   font-size: 1.05em;
 }
 .about{
+  position: relative;
   color: #ffffff;
   height: 22.5em;
   margin: 1% 0;
-  background-image: url("img/Cube_left.png");
+  background-image: url("../img/Cube_left.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: left;
@@ -78,8 +83,9 @@ header{
   display: auto;
 }
 .contact{
+  position: relative;
   height: 22.5em;
-  background: url("img/Cube_right.png") no-repeat;
+  background: url("../img/Cube_right.png") no-repeat;
   background-size: contain;
   background-position: right;
   margin-bottom: 4%;
@@ -132,14 +138,14 @@ header{
   width: 10%;
   left: -4%;
   border: none;
-  background-image: url("img/button_in_form_not_active.png");
+  background-image: url("../img/button_in_form_not_active.png");
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: center;
   cursor: pointer;
 }
 .button_in_form:focus{
-  background-image: url("img/button_in_form_active.png");
+  background-image: url("../img/button_in_form_active.png");
   font-weight: bold;
 }
 .footer{
@@ -219,4 +225,151 @@ footer a:hover{
   color: #fff;
   text-align: center;
   font-size: 0.6em;
+}
+.anchor{
+  position: absolute;
+  top:0;
+}
+
+/* Slider */
+.slider-container{
+  position: relative;
+  width: 100%;
+  height: 22.5em;
+  overflow: hidden;
+}
+.slide img{
+  position: absolute;
+}
+.slide{
+  height: 100%;
+}
+.textbg{
+  position: relative;
+  color: #fff;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  background-color: rgba(96, 96, 96, 0.5);
+  transform: skew(-30deg);
+  margin: 0 auto;
+  margin-left: 50%;
+  overflow: hidden;
+}
+.artCaption, .textbg p{
+  transform: skew(30deg);
+}
+.artCaption{
+  margin-top: 30%;
+  color: #1ba2e6;
+  text-shadow:                /*обводка текста*/
+  -0   -2px 0   #000000,
+  0   -2px 0   #000000,
+  -0    2px 0   #000000,
+  0    2px 0   #000000,
+  -2px -0   0   #000000,
+  2px -0   0   #000000,
+  -2px  0   0   #000000,
+  2px  0   0   #000000,
+  -1px -2px 0   #000000,
+  1px -2px 0   #000000,
+  -1px  2px 0   #000000,
+  1px  2px 0   #000000,
+  -2px -1px 0   #000000,
+  2px -1px 0   #000000,
+  -2px  1px 0   #000000,
+  2px  1px 0   #000000,
+  -2px -2px 0   #000000,
+  2px -2px 0   #000000,
+  -2px  2px 0   #000000,
+  2px  2px 0   #000000,
+  -2px -2px 0   #000000,
+  2px -2px 0   #000000,
+  -2px  2px 0   #000000,
+  2px  2px 0   #000000;
+}
+.textbg p{
+  display: block;
+  width: 85%;
+  margin: 20% auto;
+  font-size: 0.95em;
+  text-shadow: 1px 1px 3px #000000;
+}
+.arrow{
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url("../img/arrow_right.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 5%;
+  transition: .5s  ease-in-out;
+}
+.arrow:hover{
+  background-color: rgba(96, 96, 96, 0.5);
+}
+.rght{
+  right: 0;
+  background-image: url("../img/arrow_right.png");
+  border-radius: 100% 0 0 100%;
+}
+.rght:hover{
+  background-image: url("../img/arrow_right_hover.png");
+}
+.lft{
+  left: 0;
+  background-image: url("../img/arrow_left.png");
+  border-radius: 0 100% 100% 0;
+}
+.lft:hover{
+  background-image: url("../img/arrow_left_hover.png");
+}
+div.dots{
+  display: inline-block;
+  position: absolute;
+  width: 10%;
+  height: 6%;
+  top: 90%;
+  left: 50%;
+}
+.dot {
+  cursor: pointer;
+  width:21%;
+  height:100%;
+  position: relative;
+  display: inline-block;
+  background-image: url("../img/button_not_active.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all .6s ease-in-out;
+}
+.active, .dot:hover {
+  background-image: url("../img/button_active.png");
+  transform: scale(1.1);
+}
+.fade{
+  -webkit-animation-name: fade;
+  -o-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  -o-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+@-webkit-keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+@-o-keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+@-moz-keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+@keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
 }
