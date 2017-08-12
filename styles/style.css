@@ -14,7 +14,8 @@ header{
   display: block;
   background-color: #02090d;
   width: 100%;
-  margin: 1% auto;
+  margin: 0 auto;
+  padding-top: 1%;
   z-index: 100;
   height: 4.8em;
   vertical-align: middle;
@@ -24,6 +25,7 @@ header{
   display: inline-block;
   margin: 0 5%;
   width: 10%;
+    transition: all .5s ease-in-out;
 }
 .link_left, .link_right{
   width: 40%;
@@ -149,9 +151,9 @@ header{
   font-weight: bold;
 }
 .footer{
-  height: 22.5em;
   width: 100%;
   position: relative;
+  background-color: #02090d;
 }
 .line {
   position: absolute;
@@ -161,7 +163,7 @@ header{
   left: 10%;
 }
 .bottom_line {
-  bottom: 1%;
+  bottom: 10%;
 }
 .uper_line {
   top: 1%;
@@ -182,6 +184,8 @@ header{
 }
 .img_social {
   width: 60%;
+    transition: all .5s ease-in-out;
+
 }
 .footer .link{
   width: 15%;
@@ -203,11 +207,12 @@ header{
   font-size: 1.3em;
 }
 .footer menu{
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 footer a:hover{
   text-decoration: underline;
+  color: #1ba2e6;
 }
 .colum li{
   display: inline;
