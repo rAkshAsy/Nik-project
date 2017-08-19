@@ -1,0 +1,13 @@
+.photo {
+	display: inline-block;
+	margin-left: 3%;
+	width: 35%;
+	margin-top: 1%;
+}
+.text-about {
+	position: absolute;
+	display: inline-block;
+	width: 55%;
+	line-height: 1.5em;
+	right: 2%;
+}

@@ -8,7 +8,6 @@ body > div{
 	display: inline-block;
 }
 .main{
-	outline: 1px blue solid;
 	position: relative;
 }
 
