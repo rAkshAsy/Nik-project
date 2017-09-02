@@ -157,7 +157,7 @@ body > div{
 
 /*---------------ORDER---------------*/
 
-.order input/*[type="text"], .order input[type="tel"]*/{
+.order input{
 	display: block;
 	width: 80%;
 	margin: 2% auto;

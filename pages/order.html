@@ -5,7 +5,7 @@
 	<title>main_inside_page</title>
 	<link rel="stylesheet" href="../styles/style.css">
 	<link rel="stylesheet" href="../styles/style-to-bgpages.css">
-	<link rel="stylesheet" href="../styles/about.css">
+	<link rel="stylesheet" href="../styles/order.css">
 </head>
 <body>
 	<script> 
@@ -21,25 +21,51 @@
 		</a>
 		<div class="link_right">
 			<a class="link" href="price.html">Прейскурант</a>
-			<a class="link" href="order.html">Заказать</a>
+			<a class="link" href="contact.html">Заказать</a>
 		</div>
 	</header>
 	<div class="main">
-		<div class="content">
-			<img src="../img/nik.jpg" alt="" class="photo">
-			<p class="text-about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores delectus et iste, impedit dolor neque quia veritatis voluptatibus aspernatur nostrum sunt officiis illo sint, optio in autem esse odit possimus accusamus doloribus velit! Quas ab rerum praesentium temporibus sint rem modi, ut, laboriosam aliquid mollitia repellat quia. Quidem dolores iure numquam, cupiditate, vel voluptates earum commodi quam ea blanditiis neque sunt rerum repellat aliquam vitae dolore autem magni voluptate alias, beatae. Velit ullam, iusto fuga? Amet reiciendis eaque omnis, doloremque odit soluta..</p>
+		<div class="order-form">
+			<form class="order_user">
+				<p class="order_form_title">Связаться со мной</p>
+				<p>
+					<label for="order-userName"> Имя</label><br>
+					<input id='order-userName' class="for_hover" type="text" name="order-user_name">
+				</p>
+				<p>
+					<label for="order-userMail">E-mail</label><br>
+					<input id="order-userMail" class="for_hover" type="email" name="order-user_email">
+				</p>
+				<p>
+					<label for="order-select-from-price">Услуга</label><br>
+					<select name="order-select-from-price" class="for_hover" id="order-select-from-price">
+						<option value="photo">Фотосессия</option>
+						<option value="love">Love story</option>
+						<option value="family">Семейные фото</option>
+						<option value="holiday">Праздники</option>
+						<option value="wedding">Свадьбы</option>
+						<option value="interior">Интерьерная сьемка</option>
+						<option value="object">Предметная сьемка</option>
+						<option value="reportage">Репортажная сьемка</option>
+						<option value="video">Видео</option>
+					</select>
+				</p>
+				<p>
+					<label for="order-userComment">Комментарий</label><br>
+					<textarea class="for_hover for_textarea_height" id="order-userComment"></textarea>
+				</p>
+				<p>
+					<input class="order-button_in_form" class="for_hover"  type="submit" name="submit">
+				</p>
+			</form>
+		</div>
+		<div class="order-contacts">
+			<p class="order_contact_title">Контакты</p>
+			<p class="order_contact_content">(***) ***-**-**<br>(***) ***-**-**</p>
+			<p class="order_contact_content">NikSazonov</p>
+			<p class="order_contact_content">niksazonov@mail.com</p>
 		</div>
 		<div class="right-menu">
-			<div class="order">
-				<form>
-					<p>Быстрый заказ</p>
-					<label for="user-name">Имя</label>
-					<input id="user-name" type="text">
-					<label for="user-phone">Телефон</label>
-					<input id="user-phone" type="tel">
-					<input type="submit">
-				</form>
-			</div>
 			<div class="social">
 				<a href="#"><img src="../img/social/vk.png" ></a>
 				<a href="#"><img src="../img/social/Facebook.png" ></a>
@@ -72,17 +98,6 @@
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
 					<a href="#">read more...</a>
-				</div>
-			</div>
-			<div class="contacts">
-				<div id="mail">
-					<p>niksazonov@mail.com</p>
-				</div>
-				<div id="phone">
-					<p>(099) 99 99 999<br>(093) 99 99 999</p>
-				</div>
-				<div id="skype">
-					<p>niksazonov</p>
 				</div>
 			</div>
 		</div>

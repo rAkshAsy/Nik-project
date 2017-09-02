@@ -1,0 +1,81 @@
+.order-form, .order-contacts{
+	position: absolute;
+	display: inline-block;
+	width: 27%;
+	padding: 3%;
+	margin-top: 3%;
+	transition: all .5s ease;
+}
+.order-form:hover, .order-contacts:hover{
+	background-color: #02090d;
+	border-radius: .2em;
+	box-shadow: -4.53px 7.8555px 12.075px 4.466px rgba(16, 94, 133, 0.49);
+	color: #fff;
+}
+.order-form:hover .for_hover{
+	border: .15em #fff solid;
+	color: #fff;
+}
+.order-form:hover input[type="submit"]{
+	border: .15em #fff solid;
+	color: #fff;
+}
+.order-contacts{
+	left: 36%;
+}
+.order-form{
+	left: 1%;
+}
+
+.order_form_title{
+	text-align: center;
+}
+select option{
+	background-color: #02090d;
+}
+.for_hover{
+	width: 80%;
+	margin: 2% 5% 0;
+	padding: 1%;
+	border-radius: .4em;
+	background: none;
+	color: #02090d;
+	border:  .15em #02090d solid;
+	font-size: .8em;
+}
+.order_user input[type="submit"]{
+	border-radius: 1em;
+	width: 40%;
+	margin-top: 7%;
+	margin-right: 0;
+	padding: 1%;
+	background: none;
+	border:  .15em #02090d solid;
+}
+.order_user input[type="submit"]:focus{
+	border: .15em #1ba2e6 solid;
+	outline: none;
+	margin-top: ;
+}
+.order_user p{
+	font-size: 1em;
+	margin-top: 0;
+}
+#order-userName:focus, #order-userMail:focus, #order-select-from-price:focus, #order-userComment:focus, .order-button-in-form:focus{
+	border: .15em #1ba2e6 solid;
+	outline: none;
+}
+#order-select-from-price{
+	font-size: .6em;
+}
+#order-userComment{
+	resize: none;
+	margin-bottom: 0;
+}
+.order_contact_title{
+	text-align: center;
+	margin: 0;
+}
+.order_contact_content{
+	margin: 15% 15% 10%;
+}
