@@ -22,6 +22,7 @@
 }
 .order-contacts{
 	left: 36%;
+	padding-left: 0;
 }
 .order-form{
 	left: 1%;
@@ -77,5 +78,23 @@ select option{
 	margin: 0;
 }
 .order_contact_content{
-	margin: 15% 15% 10%;
+	margin: 15% 15% 10% 0;
+}
+.order_contact_content span{
+	margin-left: 30%;
+}
+.order_tel {
+	background: url(../img/social/phone.png) no-repeat;
+	background-size: 15%;	
+}
+.order_skype {
+	background: url(../img/social/skype.png) no-repeat;
+	background-size: contain;	
+}
+.order_mail {
+	background: url(../img/social/emails.png) no-repeat;
+	background-size: contain;
+}
+.order_tel, .order_skype, .order_mail{
+	background-position: 8% 0;
 }

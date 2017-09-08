@@ -3,14 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>main_inside_page</title>
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
 	<link rel="stylesheet" href="../styles/style.css">
-	<link rel="stylesheet" href="../styles/style-to-bgpages.css">
+	<link rel="stylesheet" href="../styles/styles_for_blog_pages.css">
+	<link rel="stylesheet" href="../styles/article.css">
 </head>
 <body>
-	<script> 
-		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-	</script>
-	<header>
+	<header class="header">
 		<div class="link_left">
 			<a class="link" href="main_inside_page.html">Портфолио</a>
 			<a class="link" href="about.html">Обо мне</a>
@@ -25,38 +24,38 @@
 	</header>
 	<div class="main">
 		<div class="content">
-			<div class="article first">
+			<div class="article first" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
-			<div class="article second">
+			<div class="article second" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
-			<div class="article third">
+			<div class="article third" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
-			<div class="article fourth">
+			<div class="article fourth" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
-			<div class="article fifth">
+			<div class="article fifth" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
-			<div class="article six">
+			<div class="article six" onclick="PopUpShow();">
 				<div class="article-promo"></div>
 				<h1 class="article-name art-text">Название статьи</h1>
 				<span class="article-date art-text">01.12.2017</span>
 			</div>
 			<div class="pages">
-			<a href="#" class="pages-arrow left"></a>
+				<a href="#" class="pages-arrow left"></a>
 				<a href="#">1</a>
 				<a href="#">2</a>
 				<a href="#">3</a>
@@ -85,30 +84,30 @@
 			</div>
 			<div class="top-articles">
 				<h1>Топ фотоподборок</h1>
-				<div class="art-in-top artFirst">
+				<div class="art-in-top artFirst" onclick="PopUpShow();">
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
-					<a href="#">read more...</a>
+					<a href="#" onclick="PopUpShow();">read more...</a>
 				</div>
-				<div class="art-in-top artSecond">
+				<div class="art-in-top artSecond" onclick="PopUpShow();">
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
-					<a href="#">read more...</a>
+					<a href="#" onclick="PopUpShow();">read more...</a>
 				</div>
-				<div class="art-in-top artThird">
+				<div class="art-in-top artThird" onclick="PopUpShow();">
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
-					<a href="#">read more...</a>
+					<a href="#" onclick="PopUpShow();">read more...</a>
 				</div>
-				<div class="art-in-top artFourth">
+				<div class="art-in-top artFourth" onclick="PopUpShow();">
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
-					<a href="#">read more...</a>
+					<a href="#" onclick="PopUpShow();">read more...</a>
 				</div>
-				<div class="art-in-top artFifth">
+				<div class="art-in-top artFifth" onclick="PopUpShow();">
 					<div class="top-art-promo"></div>
 					<p>Название статьи</p>
-					<a href="#">read more...</a>
+					<a href="#" onclick="PopUpShow();">read more...</a>
 				</div>
 			</div>
 			<div class="contacts">
@@ -179,6 +178,23 @@
 			<p>Copyright &copy; 2016 Nik Production<br>
 				made by <a href="#">rAkshAs</a></p>
 			</div>
-		</footer>
+	</footer>
+	<div class="background_article_in_the_main_page_popup" id="artPopup">
+		<div class="bg_for_article_script" onclick="PopUpHide();"></div>
+		<div class="article_in_the_main_page_popup">
+			<a href="#" class="arrow_buttons lft_2"></a>
+			<a href="#" class="arrow_buttons rght_2" ></a>
+			<div class="photo_in_article left_photo"></div>
+			<div class="photo_in_article_center"></div>
+			<div class="photo_in_article right_photo"></div>
+		</div>
+		<div class="article_info">
+			<h1 class="article_name">Article Name</h1>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../scripts/article.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 	</html>

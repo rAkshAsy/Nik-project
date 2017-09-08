@@ -1,24 +1,21 @@
+html {
+	height: 100%;
+}
 body {
 	background-color: #fff;
 	margin: 0;
 	padding: 0;
 }
 
-body > div{
+.content, .right-menu{
 	display: inline-block;
 }
-.main{
-	position: relative;
-}
-
 /*-------CONTENT------*/
 
 .content {
+	float: left;
 	width: 66%;
 	padding: 2%;
-	position: absolute;
-	left: 0;
-	top: 0;
 }
 .content a{
 	color: #000;
@@ -60,7 +57,6 @@ body > div{
 .article-promo{
 	display: block;
 	position: absolute;
-	z-index: 10;
 	width: 80%;
 	height: 60%;
 	left: 10%;
@@ -69,6 +65,9 @@ body > div{
 	background-size: cover;
 	background-position: center 0;
 	transition: all .5s ease-in-out;
+}
+.first, .second{
+	margin-top: 0;
 }
 .first > .article-promo{
 	background-image: url("../img/pict/art1.jpg");
@@ -90,7 +89,6 @@ body > div{
 }
 .art-text{
 	width: 100%;
-	z-index: 100;
 	font-weight: bold;
 	transition: all .5s ease-in-out;
 }
@@ -136,9 +134,9 @@ body > div{
 /*---------RIGHT MENU---------*/
 
 .right-menu {
-	margin-left: 71%;
 	width: 27%;
 	height: 100%;
+	padding-top: 1.5%;
 	padding-right: 2%;
 }
 .right-menu > div{
@@ -160,7 +158,7 @@ body > div{
 .order input{
 	display: block;
 	width: 80%;
-	margin: 2% auto;
+	margin: 0 auto 2%;
 	padding: 2%;
 	color: #fff;
 	border-radius: .4em;
@@ -300,5 +298,6 @@ input:focus{
 /*---------------------FOOTER---------------------*/
 
 footer {
+	position: relative;
 	background-color: #02090d;
 }
